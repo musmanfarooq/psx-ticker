@@ -1,5 +1,7 @@
 # psx-ticker
 
+[![npm version](https://img.shields.io/npm/v/psx-ticker.svg)](https://www.npmjs.com/package/psx-ticker)
+
 A small REST API for live Pakistan Stock Exchange (PSX) prices.
 
 PSX has no official public API. This scrapes PSX's own [market-summary](https://www.psx.com.pk/market-summary/) page — a plain server-rendered HTML table — giving full coverage of all ~690 currently-listed symbols, rather than the ~100-or-so most-liquid names that third-party aggregators tend to mirror.
@@ -10,7 +12,7 @@ PSX has no official public API. This scrapes PSX's own [market-summary](https://
 npx psx-ticker
 ```
 
-Runs on `http://localhost:3888` by default (configurable via a `PORT` env var, e.g. `PORT=5000 npx psx-ticker`).
+Runs on `http://localhost:3888` by default (configurable via a `PSX_TICKER_PORT` env var, e.g. `PSX_TICKER_PORT=5000 npx psx-ticker`).
 
 ### From source
 

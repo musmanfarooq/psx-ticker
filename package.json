@@ -1,6 +1,6 @@
 {
   "name": "psx-ticker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "REST API for live Pakistan Stock Exchange (PSX) prices, scraped from PSX's own market-summary page.",
   "main": "src/index.js",
   "bin": {

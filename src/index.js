@@ -16,7 +16,7 @@ if (require.main === module) {
   app.use(cors());
   app.use(psxTickerRouter);
 
-  const PORT = process.env.PORT || 3888;
+  const PORT = process.env.PSX_TICKER_PORT || 3888;
   app.listen(PORT, () => {
     console.log(`psx-ticker listening on port ${PORT}`);
   });
