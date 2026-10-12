@@ -1,8 +1,9 @@
 {
   "name": "psx-ticker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "REST API for live Pakistan Stock Exchange (PSX) prices, scraped from PSX's own market-summary page.",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "bin": {
     "psx-ticker": "./src/index.js"
   },
@@ -10,14 +11,32 @@
     "start": "node src/index.js",
     "dev": "node --watch src/index.js"
   },
-  "keywords": ["psx", "pakistan-stock-exchange", "stocks", "api"],
-  "author": "",
+  "keywords": [
+    "psx",
+    "pakistan-stock-exchange",
+    "stocks",
+    "api"
+  ],
+  "author": "musmanfarooq",
   "license": "ISC",
   "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musmanfarooq/psx-ticker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/musmanfarooq/psx-ticker/issues"
+  },
+  "homepage": "https://github.com/musmanfarooq/psx-ticker#readme",
   "dependencies": {
     "cheerio": "^1.2.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
   }
 }
